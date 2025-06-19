@@ -42,6 +42,13 @@
   <i class="header-toggle d-xl-none bi bi-list"></i>
 
   <div class="header-container d-flex flex-column align-items-start">
+
+    <!-- Language Toggle Buttons -->
+  <div class="language-switch" style="text-align: right; margin: 20px;">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('jp')">日本語</button>
+  </div>
+
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
@@ -380,512 +387,462 @@
 
 
 <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+<section id="portfolio" class="portfolio section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Selected works across digital, branding, and visual content, crafted for businesses and audiences in both global and Japanese markets.</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="row">
+        <div class="col-lg-3 filter-sidebar">
+          <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-social">Social Media</li>
+              <li data-filter=".filter-editorial">Editorial</li>
+              <li data-filter=".filter-video">Video Editing</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-9">
+          <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <div class="row">
-            <div class="col-lg-3 filter-sidebar">
-              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
-                <ul class="portfolio-filters isotope-filters">
-                  <li data-filter="*" class="filter-active">All Projects</li>
-                  <li data-filter=".filter-photography">Photography</li>
-                  <li data-filter=".filter-design">Design</li>
-                  <li data-filter=".filter-automotive">Automotive</li>
-                  <li data-filter=".filter-nature">Nature</li>
-                </ul>
+            <!-- Branding -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/branding-logo.webp" class="img-fluid" alt="Branding Project">
+                <div class="portfolio-info">
+                  <div class="content">
+                    <span class="category">Branding</span>
+                    <h4>Jiwaku Coffee – Brand Identity</h4>
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/branding-logo.webp" class="glightbox" title="Brand Identity for Jiwaku Coffee"><i class="bi bi-plus-lg"></i></a>
+                      <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="col-lg-9">
-              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Capturing Moments</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Capturing Moments"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
+            <!-- Web Design -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/web-design-azuma.webp" class="img-fluid" alt="Web Project">
+                <div class="portfolio-info">
+                  <div class="content">
+                    <span class="category">Web Design</span>
+                    <h4>Azuma Consultants – Website Redesign</h4>
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/web-design-azuma.webp" class="glightbox" title="Azuma Consultants"><i class="bi bi-plus-lg"></i></a>
+                      <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Woodcraft Design</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="Woodcraft Design"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Automotive</span>
-                        <h4>Classic Beauty</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="Classic Beauty"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-4.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Nature</span>
-                        <h4>Natural Growth</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-4.webp" class="glightbox" title="Natural Growth"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Urban Stories</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
-                    <div class="portfolio-info">
-                      <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Digital Experience</h4>
-                        <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
-                          <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-              </div><!-- End Portfolio Container -->
+                </div>
+              </div>
             </div>
-          </div>
 
+            <!-- Social Media -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-social">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/social-campaign-medisinfo.webp" class="img-fluid" alt="Social Media Project">
+                <div class="portfolio-info">
+                  <div class="content">
+                    <span class="category">Social Media</span>
+                    <h4>Medisinfo2u – Health Reels Campaign</h4>
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/social-campaign-medisinfo.webp" class="glightbox" title="Medisinfo Reels Campaign"><i class="bi bi-plus-lg"></i></a>
+                      <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Editorial -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-editorial">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/editorial-safety-poster.webp" class="img-fluid" alt="Editorial Design">
+                <div class="portfolio-info">
+                  <div class="content">
+                    <span class="category">Editorial</span>
+                    <h4>Factory Safety Poster Series</h4>
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/editorial-safety-poster.webp" class="glightbox" title="Factory Safety Posters"><i class="bi bi-plus-lg"></i></a>
+                      <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Video Editing -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-video">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/video-editing-whello.webp" class="img-fluid" alt="Video Project">
+                <div class="portfolio-info">
+                  <div class="content">
+                    <span class="category">Video Editing</span>
+                    <h4>Whello – WhatsApp Conversion Tracker Video</h4>
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/video-editing-whello.webp" class="glightbox" title="Conversion Video"><i class="bi bi-plus-lg"></i></a>
+                      <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div><!-- End Portfolio Container -->
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Section -->
+    </div>
+  </div>
+</section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+<section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Helping brands and businesses connect with clarity and style across digital platforms and cultures.</p>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Innovative business</div>
-                  <div><span>performance solutions</span></div>
-                </h2>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
-                </p>
-                <a href="services.html" class="service-btn">
-                  View All Services
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
+    <div class="service-header">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <div class="service-intro">
+            <h2 class="service-heading">
+              <div>Creative solutions for</div>
+              <div><span>modern visual needs</span></div>
+            </h2>
           </div>
         </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Creative <span>branding</span>
-                </a>
-              </h3>
-              <p>
-                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-gem"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Design <span>systems</span>
-                </a>
-              </h3>
-              <p>
-                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Marketing <span>strategies</span>
-                </a>
-              </h3>
-              <p>
-                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Digital <span>platforms</span>
-                </a>
-              </h3>
-              <p>
-                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Growth <span>acceleration</span>
-                </a>
-              </h3>
-              <p>
-                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl fringilla.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-camera-video"></i>
-              </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="service-details.html">
-                  Media <span>solutions</span>
-                </a>
-              </h3>
-              <p>
-                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
-              </p>
-            </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="service-summary">
+            <p>
+              With a user-first mindset and cross-cultural design sensitivity, I craft digital experiences, social visuals, and brand stories that work seamlessly across platforms and markets.
+            </p>
+            <a href="services.html" class="service-btn">
+              View All Services
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
+      </div>
+    </div>
 
+    <div class="row justify-content-center">
+      <!-- Branding Design -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-palette2"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Brand <span>Identity</span></a></h3>
+          <p>
+            Visual storytelling through logo, typography, and identity systems that resonate with both global and Japanese audiences.
+          </p>
+        </div>
       </div>
 
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="testimonial-masonry">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-7.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
-                </div>
-              </div>
-            </div>
+      <!-- Website & UI Design -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-laptop"></i>
           </div>
-
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-7.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Daniel Morgan</h3>
-                  <span class="position">Chief Innovation Officer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-8.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-f-9.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
-              <div class="client-info">
-                <div class="client-image">
-                  <img src="assets/img/person/person-m-13.webp" alt="Client">
-                </div>
-                <div class="client-details">
-                  <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Web & <span>UI Design</span></a></h3>
+          <p>
+            Clean, responsive, and accessible designs using Figma and modern UX principles—tailored for mobile-first users.
+          </p>
         </div>
-
       </div>
 
-    </section><!-- /Testimonials Section -->
+      <!-- Video Content & Editing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-camera-video-fill"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Video <span>Editing</span></a></h3>
+          <p>
+            Engaging short-form videos for social platforms—cut, captioned, and optimized to increase viewer retention and reach.
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Media Visuals -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Social <span>Content</span></a></h3>
+          <p>
+            Feed-ready designs and strategies that speak to your audience and elevate your brand across Social Medias.
+          </p>
+        </div>
+      </div>
+
+      <!-- Editorial & Print -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-journal"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Editorial & <span>Print</span></a></h3>
+          <p>
+            Flyers, posters, and publication layouts designed with typographic care and multilingual formatting in mind.
+          </p>
+        </div>
+      </div>
+
+      <!-- Japan-Ready Design Support -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-translate"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3><a href="service-details.html">Japan-Ready <span>Design</span></a></h3>
+          <p>
+            Bilingual design assets and culturally-adapted visuals for clients aiming to reach Japanese users with impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- /Services Section -->
+
+
+<!-- Process Section -->
+<section id="process" class="process section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>How I Work</h2>
+    <p>A step-by-step creative approach built to align strategy, storytelling, and design execution.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+
+      <!-- Step 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">1</span>
+          </div>
+          <h3>Research &<br> Understanding</h3>
+          <p>Exploring goals, audience, and market to establish clear direction and creative insights.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">2</span>
+          </div>
+          <h3>Concept &<br> Ideation</h3>
+          <p>From moodboards to sketches, I explore multiple creative directions to refine your brand narrative.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-palette2"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">3</span>
+          </div>
+          <h3>Design &<br> Execution</h3>
+          <p>Using Figma, Illustrator, and CapCut, I design with intent — from layouts to video and visual storytelling.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">4</span>
+          </div>
+          <h3>Feedback &<br> Refinement</h3>
+          <p>Client collaboration is key. I adjust based on input and align with goals until we get the perfect result.</p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">5</span>
+          </div>
+          <h3>Finalization &<br> Delivery</h3>
+          <p>Files, systems, guidelines — everything’s handed off clean and ready for real-world use or launch.</p>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <span class="step-number">6</span>
+          </div>
+          <h3>Support &<br> Iteration</h3>
+          <p>I provide post-launch support, edits, or versioning where needed — ensuring consistency over time.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Process Section -->
+
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Let’s connect — whether it’s a project, collaboration, or just to say hello!</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box">
-              <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+    <div class="row g-4 g-lg-5">
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="info-box">
+          <h3>Contact Info</h3>
+          <p>Based in Gotemba, Japan — open to projects, freelance work, or design roles globally and locally.</p>
 
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
-                </div>
-              </div>
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="content">
+              <h4>Location</h4>
+              <p>Gotemba, Shizuoka</p>
+              <!-- <p>VILLA AZUMA C4</p>
+              <p>1624-8 Fukasawa, Gotemba, Shizuoka 412-0023</p> -->
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <div class="contact-form">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div class="content">
+              <h4>Phone</h4>
+              <!-- <p>+81 80-XXXX-XXXX (Japan)</p> -->
+              <p>+62 851-5644-5641 (WhatsApp)</p>
             </div>
           </div>
 
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="content">
+              <h4>Email</h4>
+              <p>farhanps2498@gmail.com</p>
+            </div>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Contact Section -->
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-form">
+          <h3>Get In Touch</h3>
+          <p>Looking for someone to bring design ideas to life? Let’s make something great together.</p>
+
+          <form action="forms/contact.php" method="post" class="php-email-form">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+
+              <div class="col-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              </div>
+
+              <div class="col-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
 
   </main>
 

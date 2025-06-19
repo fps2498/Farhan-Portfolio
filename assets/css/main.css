@@ -1941,6 +1941,140 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Process Section
+--------------------------------------------------------------*/
+#process .service-card {
+  /* Inherit same as .services */
+  padding: 40px;
+  margin-bottom: 30px;
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: var(--surface-color);
+}
+
+#process .service-icon {
+  margin-bottom: 25px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+  position: relative;
+}
+
+#process .service-icon i {
+  font-size: 32px;
+  color: var(--accent-color);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#process .card-action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+#process .card-action .step-number {
+  font-size: 20px;
+  color: var(--contrast-color);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+#process .service-card:hover {
+  border-color: transparent;
+}
+
+#process .service-card:hover .card-action {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#process .service-card:hover .service-icon i {
+  transform: scale(1.1);
+}
+
+/* Optional: Background animation shape */
+#process .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  clip-path: polygon(70% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+#process .service-card:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* .service-card .service-icon {
+  background: rgba(13, 110, 253, 0.1); 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.service-icon.step-style {
+  background: rgba(13, 110, 253, 0.1); 
+  color: var(--bs-primary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+.step-badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: var(--bs-primary); 
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  z-index: 2;
+} */
+
+
+/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-masonry {
@@ -2593,3 +2727,4 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
